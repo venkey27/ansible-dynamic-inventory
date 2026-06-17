@@ -13,6 +13,6 @@ filters:
   instance-state-name: running  
 
 keyed_groups:
-  - key: ec2_tags.name
+  - key: tags.name
     separator: ''
 
