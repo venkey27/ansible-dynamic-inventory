@@ -1,4 +1,8 @@
-plugin: amazon.aws.aws_ec2
+plugin: amazon.aws.aws_ec2 # Instead of you manually typing static IP addresses into a text file (like an hosts inventory file file), this plugin tells Ansible to automatically talk to AWS and grab a live, real-time list of your EC2 instances.
 
 regions:
 - us-east-1
+
+hostnames:
+  -  ip-address
+  
