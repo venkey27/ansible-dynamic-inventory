@@ -4,7 +4,11 @@ regions:
 - us-east-1
 
 hostnames:
+  # this option allows displaying the public ip address
   - private-ip-address
 
-
+filters:
+  # this selects only running instances with tag ' Environment' tag set to 'dev'
+  tag:Name: frontend
+  instance-state-name: running  
 
