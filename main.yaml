@@ -2,5 +2,5 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: ping
+  - name: ping # ping means, It is a quick test flight. You run a ping task at the very beginning of your playbook to make sure your connection, SSH keys, and passwords are correct before you try to do the heavy work like installing software.
     ping:  
